@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { configureStore } from '@reduxjs/toolkit';
-import globalReducer from "state";
+import globalReducer from "state"; // Ensure the path to state is correct
 import { Provider } from 'react-redux';
-
 
 const store = configureStore({
   reducer: {
-    globalReducer,
+    global: globalReducer, // Use 'global' as the key
   },
 });
 
