@@ -25,9 +25,9 @@ const Navbar = () => {
       }}
     >
       <Toolbar sx ={{ justifyContent: "space-between"}}>
-        
+
       </Toolbar>
     </AppBar>
   )
 
-export default Navbar
+export default Navbar;
