@@ -3,15 +3,31 @@ import {
     LightModeOutlined, 
     DarkModeOutlined, 
     Menu as MenuIcon,
-} from '@mui/icons-material'
+    Search,
+    SettingsOutlined,
+    ArrowDropDownOutlined,
+} from '@mui/icons-material';
+import FlexBetween from 'components/FlexBetween';
+import { useDispatch } from 'react-redux';
+import { setMode } from 'state';
+import profileImages from "assets/profile.jpg"
+import { AppBar, Toolbar, useTheme } from "@mui/material";
 
-
-
-
-function Navbar() {
+const Navbar = () => {
+  const dispatch = useDispatch();
+  const theme = useTheme();
   return (
-    <div>Navbar</div>
+    <AppBar
+      sx= {{
+        position: "static",
+        background: "none",
+        boxShadow: "none",
+      }}
+    >
+      <Toolbar sx ={{ justifyContent: "space-between"}}>
+        
+      </Toolbar>
+    </AppBar>
   )
-}
 
 export default Navbar
