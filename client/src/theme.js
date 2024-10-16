@@ -172,5 +172,14 @@ export const themeSettings = (mode) => {
               color: mode === "light" ? "#000000" : "#ffffff", // Ensure body text is black in light mode
           },
       },
+      components: {
+          MuiSvgIcon: {
+              styleOverrides: {
+                  root: {
+                      color: mode === "light" ? "#000000" : "#ffffff", // Set icon color to black in light mode
+                  },
+              },
+          },
+      },
   };
 };
