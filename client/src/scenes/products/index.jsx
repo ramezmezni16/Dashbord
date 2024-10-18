@@ -86,13 +86,17 @@ const Product = ({
 };
 
 const Products = () => {
-  const { data, isLoading } = useGetProductsQuery();
+  const { data, isLoading, error } = useGetProductsQuery();
   const isNonMobile = useMediaQuery("(min-width: 1000px)");
+
+  if (error) {
+    return <p>Error loading products: {error.message}</p>;
+  }
 
   return (
     <Box m="1.5rem 2.5rem">
       <Header title="PRODUCTS" subtitle="See your list of products." />
-      {data || !isLoading ? (
+      {data && !isLoading ? ( // Check if data is defined
         <Box
           mt="20px"
           display="grid"
