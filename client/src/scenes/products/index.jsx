@@ -32,7 +32,7 @@ const Product = ({
       sx={{
         backgroundImage: "none",
         backgroundColor: theme.palette.background.alt,
-        borderRadius: "0.55rem",
+        borderRadius: "0.55rem"
       }}
     >
       <CardContent>

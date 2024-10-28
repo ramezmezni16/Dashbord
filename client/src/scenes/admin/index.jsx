@@ -65,7 +65,7 @@ const Admin = () => {
           },
           "& .MuiDataGrid-columnHeaders": {
             backgroundColor: theme.palette.background.alt,
-            color: theme.palette.secondary[100],
+            color: theme.palette.text.primary, // Change this line to use primary text color
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {
